@@ -1,0 +1,370 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* LIGHT AND DARK MODE */
+/* LIGHT AND DARK MODE */
+/* LIGHT AND DARK MODE */
+
+
+:root {
+    --theme-light-purple: #875CFF;
+    --theme-orange: #FA862E;
+    --theme-dark-purple: #31294D;
+    --text-color: #000000;
+    --bg-color: #F6F8FA;
+    --photo-bg-color: #FFFFFF;
+    --input-bg-color: #FFFFFF;
+    --line-color: #1D2533;
+    --outline-color: #703045;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-light-purple: #875CFF;
+        --theme-orange: #FA862E;
+        --theme-dark-purple: #31294D;
+        --text-color: #FFFFFF;
+        --bg-color: #131925;
+        --photo-bg-color: #1E2330;
+        --input-bg-color: #0b0f16;
+        --line-color: #1D2533;
+        --outline-color: #a03458;
+    }
+}
+
+
+/* MAIN-STYLING */
+/* MAIN-STYLING */
+/* MAIN-STYLING */
+
+
+body {
+    background-color: var(--bg-color);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 120px 50px 120px;
+}
+
+.landing {
+    max-width: 2000px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* LOGO */
+/* LOGO */
+/* LOGO */
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h2 {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 50px;
+    transform: translateY(-10%);
+}
+
+
+/* FORM-PART */
+/* FORM-PART */
+/* FORM-PART */
+
+
+.form-part {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.form h1 {
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+input[type="email"], input[type="password"] {
+    width: 90%;
+    height: 65px;
+    border-radius: 19px;
+    padding: 15px 0px 0px 15px;
+    background-color: var(--input-bg-color); 
+    border: 0.5px solid var(--line-color);
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    outline: solid;
+    outline-color: var(--outline-color);
+    outline-width: 0.5px;
+    background-color: var(--input-bg-color);
+}
+
+.password-label, .email-label {
+    color: #737374;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    transform: translate(15px, 35px);
+}
+
+input::placeholder {
+    color: rgb(187, 186, 186);
+    font-size: 0.9rem;
+}
+
+.checkbox-area {
+    display: flex;
+    width: 90%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 30px;
+}
+
+.remembered-password label {
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 36px;
+}
+
+.remembered-password input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -9%;
+    left: 3px;
+    border-radius: 7px;
+    border: 2px solid var(--line-color);
+    height: 25px;
+    width: 25px;
+    background-color: var(--input-bg-color);
+}
+
+.forgotten-password p {
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+button[type="submit"] {
+    width: 155px;
+    height: 59px;
+    margin-top: 25px;
+    border-radius: 19px;
+    border: none;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    color: white;
+    font-size: 0.9rem;
+
+}
+
+
+/* LOGIN-OPTIONS */
+/* LOGIN-OPTIONS */
+/* LOGIN-OPTIONS */
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.login-text h2 {
+    color: #b1b1b1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button-options {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+
+.button-options button {
+    width: 50%;
+    height: 50px;
+    border: 2px solid var(--line-color);
+    background-color: transparent;
+    border-radius: 14px;
+    font-size: 1rem;
+}
+
+.google {
+    margin-right: 12px;
+    color: #b1b1b1;
+}
+
+.google i {
+    font-size: 1.3rem;
+    margin-right: 8px;
+    color: var(--text-color);
+}
+
+.facebook {
+    color: #b1b1b1;
+}
+
+.facebook i {
+    font-size: 1.3rem;
+    margin-right: 8px;
+    color: var(--text-color);
+}
+
+.register-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-text p {
+    color: #b1b1b1;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-color {
+    color: var(--outline-color)
+}
+
+
+/* PHOTO-PART */
+/* PHOTO-PART */
+/* PHOTO-PART */
+
+
+.photo-part {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* margin-left: 80px; */
+    border-radius: 40px;
+    align-items: center;
+    padding: 10px 50px 30px 90px;
+    background: var(--photo-bg-color);
+}
+
+.form-image {
+    height: 76%;
+}
+
+.commercial-heading {
+    height: 12%;
+}
+
+.commercial-paragraph {
+    height: 12%;
+}
+
+.form-image img {
+    height: 100%;
+}
+
+.commercial-heading {
+    margin-top: 30px;
+}
+
+.commercial-heading h2 {
+    color: var(--text-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 29px;
+}
+
+.commercial-paragraph {
+    margin-top: 30px;
+}
+
+.commercial-paragraph p {
+    color: #b1b1b1;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 25px;
+    font-size: 0.95rem;
+}
+
+
+
+
