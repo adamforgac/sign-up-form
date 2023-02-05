@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
@@ -29,11 +30,11 @@
 
                         <p class="email-label">Email adress</p>
 
-                        <input autocomplete="off" type="email" id="user-email" name="email" placeholder="youremail@example.com">
+                        <input autocomplete="off" type="email" id="user-email" name="email" placeholder="youremail@example.com" required>
 
                         <p class="password-label">Password</p>
 
-                        <input autocomplete="off" type="password" id="password" name="password" placeholder="password_123">
+                        <input autocomplete="off" type="password" id="password" name="password" minlength="5" maxlength="18" placeholder="between 12-30 characters" required>
 
                         <div class="checkbox-area">
                             <div class="remembered-password">
@@ -75,13 +76,12 @@
 
                 <div class="commercial-heading">
                     <h2>Forms are one of the most important aspects of a website. Count the last days with your unfriendly design.</h2>
-                </div>
 
-                <div class="commercial-paragraph">
                     <p>Say goodbye to disgruntled site visitors and register now. Thanks to formDesign, you increase the chances of a user filling out your form by up to 30%.</p>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -65,8 +65,8 @@ table {
     --bg-color: #F6F8FA;
     --photo-bg-color: #FFFFFF;
     --input-bg-color: #FFFFFF;
-    --line-color: #1D2533;
-    --outline-color: #703045;
+    --line-color: #9e9fa0;
+    --outline-color: #eb6a95;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -95,7 +95,7 @@ body {
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +104,7 @@ body {
 
 .landing {
     max-width: 2000px;
+    height: min(1100px, 100%);
     display: flex;
     flex-direction: row;
 }
@@ -146,7 +147,7 @@ body {
 
 .form h1 {
     font-family: 'Fira Sans', sans-serif;
-    color: white;
+    color: var(--text-color);
     font-size: 2rem;
 }
 
@@ -157,7 +158,7 @@ input[type="email"], input[type="password"] {
     padding: 15px 0px 0px 15px;
     background-color: var(--input-bg-color); 
     border: 0.5px solid var(--line-color);
-    color: white;
+    color: var(--text-color);
     display: block;
     margin-top: 10px;
 }
@@ -217,10 +218,19 @@ input::placeholder {
     background-color: var(--input-bg-color);
 }
 
+.checked {
+    background-color: #875CFF;
+}
+
 .forgotten-password p {
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
+}
+
+.forgotten-password p:hover {
+    cursor: pointer;
+    color: var(--outline-color);
 }
 
 button[type="submit"] {
@@ -233,7 +243,13 @@ button[type="submit"] {
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     color: white;
     font-size: 0.9rem;
+    transition: 0.5s;
+}
 
+button[type="submit"]:hover {
+    transition: 0.5s;
+    scale: 1.1;
+    cursor: pointer;
 }
 
 
@@ -271,6 +287,13 @@ button[type="submit"] {
     background-color: transparent;
     border-radius: 14px;
     font-size: 1rem;
+    transition: 0.5s;
+}
+
+.button-options button:hover {
+    cursor: pointer;
+    border: 2px solid var(--text-color);
+    transition: 0.5s;
 }
 
 .google {
@@ -306,8 +329,12 @@ button[type="submit"] {
     font-family: 'Open Sans', sans-serif;
 }
 
+.register-text:hover {
+    cursor: pointer;
+}
+
 .register-color {
-    color: var(--outline-color)
+    color: var(--outline-color);
 }
 
 
@@ -323,28 +350,25 @@ button[type="submit"] {
     /* margin-left: 80px; */
     border-radius: 40px;
     align-items: center;
-    padding: 10px 50px 30px 90px;
+    padding: 10px 40px 30px 40px;
     background: var(--photo-bg-color);
 }
 
 .form-image {
-    height: 76%;
-}
-
-.commercial-heading {
-    height: 12%;
-}
-
-.commercial-paragraph {
-    height: 12%;
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
 }
 
 .form-image img {
-    height: 100%;
+    width: max(300px, 80%);
 }
 
 .commercial-heading {
     margin-top: 30px;
+    flex: 2;
 }
 
 .commercial-heading h2 {
@@ -358,11 +382,13 @@ button[type="submit"] {
     margin-top: 30px;
 }
 
-.commercial-paragraph p {
+.commercial-heading p {
     color: #b1b1b1;
     font-family: 'Fira Sans', sans-serif;
     line-height: 25px;
+    width: clamp(45ch, 100%, 75ch);
     font-size: 0.95rem;
+    margin: 30px 0px 30px 0px;
 }
 
 

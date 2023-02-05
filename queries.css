@@ -1,0 +1,164 @@
+@media only screen and (max-width: 1120px) {
+    .wrapper {
+        padding: 80px 90px 80px 90px;
+    }
+
+    .commercial-heading h2 {
+        font-size: 1rem;
+        line-height: 23px;
+    }
+    
+    .commercial-heading p {
+        font-size: 0.7rem;
+        line-height: 21px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .wrapper {
+        padding: 70px 40px 70px 40px;
+    }
+
+    .logo h2 {
+        font-size: 1.8rem;
+    }
+
+    .form h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="email"], input[type="password"] {
+        height: 55px;
+    }
+
+    .password-label, .email-label {
+        font-size: 0.6rem;
+        transform: translate(15px, 30px)
+    }
+
+    .checkmark {
+        height: 22px;
+        width: 22px;
+        top: -4.9%;
+    }
+
+    .remembered-password label {
+        font-size: 0.75rem;
+        margin-left: 33px;
+    }
+
+    .forgotten-password p {
+        font-size: 0.7rem;
+    }
+
+    button[type="submit"] {
+        height: 50px;
+        width: 143px;
+        font-size: 0.78rem;
+    }
+
+    .button-options button {
+        height: 48px;
+    }
+    
+    .google i {
+        font-size: 1.1rem;
+    }
+    
+    .facebook i {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .wrapper {
+        padding: 30px 70px 70px 30px;
+    }
+
+    .commercial-heading h2 {
+        font-size: 0.8rem;
+        line-height: 18px;
+    }
+    
+    .commercial-heading p {
+        font-size: 0.6rem;
+        line-height: 17px;
+    }
+
+    .photo-part {
+        padding: 10px 25px 10px 25px;
+    }
+
+    .login {
+        margin-top: 60px;
+    }
+
+    button[type="submit"] {
+        height: 46px;
+        width: 113px;
+        font-size: 0.78rem;
+    }
+
+    .form-part h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .form-image img {
+        width: max(200px, 100%)
+    }
+
+    input[type="email"] {
+        margin-bottom: 12px;
+    }
+
+    input[type="email"]:focus, input[type="password"]:focus {
+        outline: none;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .photo-part {
+        display: none;
+    }
+
+    .form-part {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .landing {
+       width: 100%;
+       min-height: 100%;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form h1 {
+        margin-top: 30px;
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+    }
+} 
