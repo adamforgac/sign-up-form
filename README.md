@@ -1,2 +1,2 @@
 # sign-up-form
-Another task from The Odin Project. Form made mainly for mobile devices
+Another task from The Odin Project. Sign up form made mainly for mobile devices
