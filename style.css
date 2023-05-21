@@ -161,12 +161,11 @@ input[type="email"], input[type="password"] {
     color: var(--text-color);
     display: block;
     margin-top: 10px;
+    outline: none;
 }
 
 input[type="email"]:focus, input[type="password"]:focus {
-    outline: solid;
-    outline-color: var(--outline-color);
-    outline-width: 0.5px;
+    border: 1px solid var(--outline-color);
     background-color: var(--input-bg-color);
 }
 

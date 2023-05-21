@@ -111,10 +111,6 @@
     input[type="email"] {
         margin-bottom: 12px;
     }
-
-    input[type="email"]:focus, input[type="password"]:focus {
-        outline: none;
-    }
 }
 
 
